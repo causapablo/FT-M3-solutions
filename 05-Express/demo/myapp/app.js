@@ -9,7 +9,7 @@ var app = express();
 // uncomment after placing your favicon in /public
 
 app.use(logger('dev'));
-app.use(bodyParser.json());
+app.use(bodyParser.json());//El body parser esta deprecado, ahora la serializacion se hace con express.json();
 app.use(bodyParser.urlencoded({ extended: false }));
 
 
